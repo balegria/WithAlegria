@@ -1,0 +1,111 @@
+
+body{
+  /*padding to the top in order to avoid the header from overlaying*/
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.container-fluid{
+  background-color: white;
+  /*border-bottom-color: #C2925E;
+  border-bottom-style: solid;
+  border-bottom-width: 1;
+*/}
+
+.nav.navbar-nav li a:link {
+  color: #C2925E;
+  /*font-family: 'Caveat', cursive;*/
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 12pt;
+}
+
+/*this is so that the navbar is centered*/
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+/*so that navbar content when collapsed is centered*/
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#header-brand {
+  color: #C2925E;
+  /*font-family: 'Caveat', cursive;*/
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.intro-header{
+  background-color: #C2925E
+}
+
+.site-heading h1{
+  /*font-family: 'Caveat', cursive;*/
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 50pt;
+  color: white;
+  padding-top: 40pt;
+  padding-bottom: 40pt;
+  text-align: center;
+}
+
+.fa.fa-circle.fa-stack-2x{
+  color: #0F161A;
+}
+
+.container.footer{
+  /*background-color: red;*/
+  /*padding-top: 30pt;*/
+}
+
+#latest-posts-title{
+  font-family: 'Alegreya', serif;
+  font-size: 18pt;
+  color: #C2925E;
+  /*border-style: solid;*/
+  /*border-width: ;*/
+  /*display: inline-block;*/
+  /*float: none;*/
+  /*vertical-align: top;*/
+}
+
+.post-title{
+  font-family: 'Alegreya', serif;
+  font-size: 15pt;
+}
+
+.post-content{
+  font-family: 'Alegreya', serif;
+  font-size: 12pt;
+}
+
+
+/*ABOUT ME*/
+#about-me-img {
+  width:80%;
+  height: auto;
+  float: right;
+  margin-right: 40pt;
+}
+
+.main-about-me-content{
+  padding-top: 30pt;
+}
+
+.main-about-me-content p{
+  color: #0F161A;
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Alegreya', serif;
+  font-size: 12pt;
+  padding-top: 35pt;
+  line-height: 150%;
+}
+
+
+
+
+
+
