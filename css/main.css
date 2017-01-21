@@ -15,7 +15,7 @@ body{
 .nav.navbar-nav li a:link {
   color: #C2925E;
   /*font-family: 'Caveat', cursive;*/
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 12pt;
 }
 
@@ -34,7 +34,7 @@ body{
 #header-brand {
   color: #C2925E;
   /*font-family: 'Caveat', cursive;*/
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 .intro-header{
@@ -43,7 +43,7 @@ body{
 
 .site-heading h1{
   /*font-family: 'Caveat', cursive;*/
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 50pt;
   color: white;
   padding-top: 40pt;
@@ -61,8 +61,7 @@ body{
 }
 
 #latest-posts-title{
-  font-family: 'Alegreya', serif;
-  font-size: 18pt;
+  font-family: 'Lato', sans-serif;
   color: #C2925E;
   /*border-style: solid;*/
   /*border-width: ;*/
@@ -72,13 +71,11 @@ body{
 }
 
 .post-title{
-  font-family: 'Alegreya', serif;
-  font-size: 15pt;
+  font-family: 'Lato', sans-serif;
 }
 
 .post-content{
-  font-family: 'Alegreya', serif;
-  font-size: 12pt;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -96,10 +93,7 @@ body{
 
 .main-about-me-content p{
   color: #0F161A;
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Alegreya', serif;
-  font-size: 12pt;
+  font-family: 'Lato', sans-serif;
   padding-top: 35pt;
   line-height: 150%;
 }
