@@ -1,3 +1,5 @@
+'user strict';
+
 var app = angular.module('withAlegria', [
   'ngRoute'
 ]);
@@ -38,35 +40,29 @@ app.config(['$routeProvider', function ($routeProvider) {
       controller: "BlogCtrl"
     })
     .otherwise("/", {
-      templateUrl: "partials/home.html", 
-      controller: "PageCtrl"
+      templateUrl: "partials/home.html",    
+      controller: "PageCtrl"    
     });
 }]);
 
-// app.run(['$rootScope', '$route', function($rootScope, $route) {
-//     $rootScope.$on('$routeChangeSuccess', function() {
-//         document.title = $route.current.title;
-//         // $route.reload();
-//     });
-    
-// }]);
 
 /**
- * Controls the Blog
- */
-app.controller('BlogCtrl', function ($scope, $location, $route, $http) {
-  console.log("Blog Controller reporting for duty.");
-  var topic = $route.current.title;
-
+* MainCtrl
+*/
+app.controller('MainCtrl', function($scope, $route) {
   function initScope(){
     $scope.headerTitle = $route.current.title;
     topic = $route.current.title;
   }
   
   $scope.$on('$routeChangeSuccess', initScope)
+});
 
-  // $scope.message = "Hello";
-  // console.log("topic here is " + topic);
+/**
+ * Controls the Blog
+ */
+app.controller('BlogCtrl', function ($scope, $location, $route, $http) {
+  console.log("Blog Controller reporting for duty.");
 
   if (topic == "Living"){
     $http.get('data/livingPosts.json').success(function(data){
@@ -93,9 +89,23 @@ app.controller('BlogCtrl', function ($scope, $location, $route, $http) {
  */
 app.controller('PageCtrl', function ($scope, $route) {
   console.log("Page Controller reporting for duty...");
-  function initScope(){
-    $scope.headerTitle = $route.current.title;
-  }
+  // $scope.$on('$routeChangeSuccess', initScope)
   
-  $scope.$on('$routeChangeSuccess', initScope)
+  if (topic == "With Alegria"){    
+    var userFeed = new Instafeed({
+          get: 'user',
+          userId: '176659272',
+          accessToken: '4483004649.ba4c844.be8c9996027d45b1ab46b078fd6abb9d',
+          // only show the last three images
+          limit: 3,
+          resolution: 'low_resolution'
+          // template: '<a class="insta-image" href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    userFeed.run();
+  }
+
 });
+
+
+
+

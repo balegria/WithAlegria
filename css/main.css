@@ -99,6 +99,17 @@ body{
 }
 
 
+/*instagram feed formatting*/
+#instafeed{
+  text-align: center;
+}
+
+.home-title{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+
 
 
 
