@@ -2,7 +2,6 @@
 
 app.controller('PageCtrl', function ($scope, $route) {
   console.log("Page Controller reporting for duty...");
-  // $scope.$on('$routeChangeSuccess', initScope)
   
   if (topic == "With Alegria"){    
     var userFeed = new Instafeed({
@@ -12,7 +11,6 @@ app.controller('PageCtrl', function ($scope, $route) {
           // only show the last three images
           limit: 3,
           resolution: 'low_resolution'
-          // template: '<a class="insta-image" href="{{link}}"><img src="{{image}}" /></a>'
     });
     userFeed.run();
   }
