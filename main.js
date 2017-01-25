@@ -54,6 +54,7 @@ app.controller('MainCtrl', function($scope, $route) {
     $scope.headerTitle = $route.current.title;
     topic = $route.current.title;
   }
+
   
   $scope.$on('$routeChangeSuccess', initScope)
 });
