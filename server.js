@@ -16,9 +16,9 @@ MongoClient.connect(mongoDBURL, (err, database) => {
 	else {
 		db = database;
 		//only want to start our servers when DB is connected
-		app.listen(3000, () => {
-			console.log('listening on 3000');
-		})
+		app.listen(process.env.PORT, '0.0.0.0', function(err) {
+		  console.log("Started listening on %s", app.url);
+		});
 	}
 })
 
