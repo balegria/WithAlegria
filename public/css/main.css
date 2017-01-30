@@ -1,21 +1,18 @@
 
 body{
   /*padding to the top in order to avoid the header from overlaying*/
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 70px;
 }
 
 .container-fluid{
   background-color: white;
-  /*border-bottom-color: #C2925E;
-  border-bottom-style: solid;
-  border-bottom-width: 1;
-*/}
+}
 
 .nav.navbar-nav li a:link {
   color: #C2925E;
   /*font-family: 'Caveat', cursive;*/
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 12pt;
 }
 
@@ -37,17 +34,25 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 
-.intro-header{
-  background-color: #C2925E
+#header-logo{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
-.site-heading h1{
-  /*font-family: 'Caveat', cursive;*/
-  font-family: 'Dancing Script', cursive;
-  font-size: 50pt;
-  color: white;
-  padding-top: 40pt;
-  padding-bottom: 40pt;
+.intro-header{
+  /*background-color: #C2925E*/
+  background-color: white;
+}
+
+.site-heading h2{
+  font-family: 'Lato', sans-serif;
+  /*font-size: 50pt;*/
+  /*color: white;*/
+  color: #0F161A;
+  /*padding-top: 40pt;*/
+  /*padding-bottom: 40pt;*/
   text-align: center;
 }
 

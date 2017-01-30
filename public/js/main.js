@@ -61,6 +61,9 @@ app.controller('MainCtrl', function($scope, $route) {
   function initScope(){
     $scope.headerTitle = $route.current.title;
     topic = $route.current.title;
+    if (topic == "With Alegria"){
+      $scope.headerTitle = "";
+    }
   }
 
   
