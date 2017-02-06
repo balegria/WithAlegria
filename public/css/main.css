@@ -60,19 +60,10 @@ body{
   color: #0F161A;
 }
 
-.container.footer{
-  /*background-color: red;*/
-  /*padding-top: 30pt;*/
-}
 
 #latest-posts-title{
   font-family: 'Lato', sans-serif;
   color: #C2925E;
-  /*border-style: solid;*/
-  /*border-width: ;*/
-  /*display: inline-block;*/
-  /*float: none;*/
-  /*vertical-align: top;*/
 }
 
 .post-title{
