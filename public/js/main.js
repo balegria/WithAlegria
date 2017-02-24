@@ -1,8 +1,6 @@
 'user strict';
 
-var app = angular.module('withAlegria', [
-  'ngRoute'
-]);
+var app = angular.module('withAlegria', ['ngRoute', 'ngSanitize']);
 
 /**
  * Configure the Routes

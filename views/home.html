@@ -7,7 +7,7 @@
                 <div class="post-preview"
                     <article ng-repeat = "post in postCollections">
                         <h2 class = "post-title">{{post.title}}</h2>
-                        <p class="post-content">{{post.postContent}}</p>
+                        <div ng-bind-html="post.postContent"></div>
                     </article>
                 </div>
 
