@@ -1,6 +1,6 @@
 'user strict';
 
-var app = angular.module('withAlegria', ['ngRoute', 'ngSanitize']);
+var app = angular.module('withAlegria', ['ngRoute', 'ngSanitize', 'ngResource']);
 
 /**
  * Configure the Routes
@@ -52,7 +52,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 /**
 * MainCtrl
 */
-app.controller('MainCtrl', function($scope, $route) {
+app.controller('MainCtrl', function($scope, $route, $routeParams) {
 
   // console.log(postsCollection);
 

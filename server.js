@@ -1,10 +1,13 @@
 console.log("May Node be with you");
 
-const express = require('express');
+// const express = require('express');
 const bodyParser= require('body-parser');
 const MongoClient = require('mongodb').MongoClient
 
-const app = express();
+// const app = express();
+
+var express = require('express');
+var app = express();
 
 app.set('view engine', 'ejs')
 
@@ -32,6 +35,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use("/views", express.static(__dirname + '/views'));
 app.use("/public", express.static(__dirname + '/public'));
+app.use("/node_modules", express.static(__dirname + "/node_modules"));
 
 
 
@@ -53,14 +57,28 @@ app.get('/getLastThreePosts', (req, res) =>{
 	})
 })
 
-// app.get('/getLivingPosts', (req, res) =>{
-// 	db.collection('postsCollection').find().toArray(function(err,result){
-// 		if(err) return console.log(err);
-// 		else{
-// 			res.json(result);
-// 		}
-// 	})
-// })
+app.get('/getPosts/:postType', (req, res) =>{
+	var postType = req.params.postType;
+	db.collection('postsCollection').find({category: postType}).toArray(function(err,result){
+		if(err) return console.log(err);
+		else{
+			res.json(result);
+		}
+	})
+})
+
+// app.get('/photosOfUser/:id', function (request, response) {
+//     var id = request.params.id;
+//     Photo.find({user_id: id}, function(err, photos) {
+//         if (err) {
+//             console.error('Doing /photosOfUser/user/:id error:', err);
+//             response.status(500).send(JSON.stringify(err));
+//             return;
+//         }
+//         var userPhotos = JSON.parse(JSON.stringify(photos));
+//         response.end(JSON.stringify(userPhotos));
+//     });
+// });
 
 
 
