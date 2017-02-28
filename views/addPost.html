@@ -1,11 +1,22 @@
 <form action="/addPost" method="POST">
-	<input type="text" placeholder="title of post" name="title">
-	<select name="category">
-		<option value="DIY">DIY</option>
-		<option value="Travel">Travel</option>
-		<option value="Living">Living</option>
-		<option value="Recipes">Recipes</option>
-	</select>
-	<input type="text" placeholder="content" name="postContent">
-	<button type="submit">Submit</button>
+	<div class = "addPost-details">
+		<input type="text" placeholder="title of post" name="title">
+		<br>
+		<br>
+		<select name="category">
+			<option value="DIY">DIY</option>
+			<option value="Travel">Travel</option>
+			<option value="Living">Living</option>
+			<option value="Recipes">Recipes</option>
+		</select>
+		<br>
+		<br>
+		<textarea name="postContent" id="addPost-content"></textarea>
+		<!-- <input id="addPost-content" type="text" placeholder="content" name="postContent"> -->
+		<br>
+		<br>
+		<button type="submit">Submit</button>
+		<br>
+		<br>
+	</div>
 </form>

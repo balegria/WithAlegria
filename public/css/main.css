@@ -107,6 +107,15 @@ body{
 
 
 
+/*add post formatting*/
+.addPost-details{
+  text-align: center;
+}
+
+#addPost-content{
+  width: 50%;
+  word-break: break-word;
+}
 
 
 
