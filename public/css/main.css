@@ -10,11 +10,20 @@ body{
   background-color: white;
 }
 
-.nav.navbar-nav li a:link {
+/*.nav.navbar-nav li a:link {
   color: #C2925E;
-  /*font-family: 'Caveat', cursive;*/
   font-family: 'Allura', cursive;
-  font-size: 12pt;
+  font-size: 16pt;
+}*/
+
+.nav.navbar-nav .navbar-text a:link{
+  color: #C2925E;
+  font-family: 'Allura', cursive;
+  font-size: 16pt;
+}
+
+.navbar {
+  border: 0;
 }
 
 /*this is so that the navbar is centered*/
@@ -28,6 +37,11 @@ body{
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+.social-media-icon{
+  font-size: 12px;
+}
+
 
 #header-brand {
   color: #C2925E;
