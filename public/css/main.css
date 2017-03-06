@@ -119,11 +119,28 @@ body{
 /*instagram feed formatting*/
 #instafeed{
   text-align: center;
+  background-color: #F8F3E6;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.insta-img{
+  background-color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .home-title{
   text-align: center;
-  /*font-family: 'Dancing Script', cursive;*/
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+.line-break{
+  height: 3px;
+  background-color: #F8F3E6;
 }
 
 

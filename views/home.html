@@ -1,5 +1,7 @@
 <div class="container">
     <div class="row">
+
+        <!-- Latest Posts -->
         <div class="col-xs-12 col-sm-6 col-md-8">
             <h1 id = "latest-posts-title">Latest Posts</h1>
             <div class="post-preview"
@@ -10,10 +12,14 @@
                     <img src="public/img/{{post.images[0]}}" class = "post-image"></img>
 
                     <div ng-bind-html="post.postContent"></div>
-                    <hr>
+                    <!-- <hr> -->
                 </article>
             </div>
         </div>
+
+
+
+        <!-- About Me Section -->
         <div class="col-xs-6 col-md-4">
             <div>
                 <img src="public/img/lesley-about-me.JPG" id="about-me-img"></img>
@@ -24,44 +30,38 @@
                     ‘With Alegria' is a way of documenting my story as a millennial Latina deeply committed to community and cultura. Stay tuned and follow me on Instagram @lesleyalegria to stay connected!
                 </p>
             </div>
-        </div>
 
+            <ul class="list-inline text-center">
+                <li> 
+                    <a href="https://twitter.com/LesleyAlegria" target="_blank">
+                        <span class="fa-stack fa-md">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lesleyalegria/" target="_blank">
+                        <span class="fa-stack fa-md">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
 
+            <div class = "line-break"></div>
 
-        <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h2 class = "home-title"> FOLLOW MY DAILY LIFE </h2>
             <br>
-            <h1 id = "latest-posts-title">Latest Posts</h1>
 
-            <div class="post-preview"
-                <article ng-repeat = "post in postCollections">
-                    <h2 class = "post-title">{{post.title}}</h2>
-                    <div ng-bind-html="post.postContent"></div>
-                </article>
-            </div>
+            <div id="instafeed"></div>
+            <br>
 
-            <hr>
-           
-        </div> -->
+
+        </div>
     </div>
+
+    
+
 </div>
-
-<!-- <div class="container">
-    <div class="row">
-        <div class = "col-sm-5 col-md-6">
-            <img src="public/img/lesley-about-me.jpg" id="about-me-img"></img>
-        </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-            <p>Hi! I’m Lesley. <i>With Alegria</i> started as a way of documenting my story as a millennial Latina deeply committed to family, culture, art, and community. Alegria, meaning joy in Spanish, is my last name and it’s with <i>much</i> alegria that I welcome you to my journey as a twenty something navigating life as a millennial Latina. My family’s Peruvian culture and my San Francisco upbringing inspire my food, style, and weekend adventures! As a result, I share my mama’s <b>recipes</b> influenced by Peruvian cuisine, creative <b>DIY projects</b> inspired by my papa’s craftsmanship, and <b>weekend trips</b> to my favorite Bay Area spots. You can follow more of my story on Instagram, Snapchat, and Twitter!</p>
-        </div>
-    </div>        
-</div> -->
-
-    <!-- <hr> -->
-
-<!-- <h2 class = "home-title"> Latest on Instagram </h2>
-<br>
-
-<div id="instafeed"></div>
-
-<hr>
- -->
