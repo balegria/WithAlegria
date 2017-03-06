@@ -2,7 +2,7 @@
 body{
   /*padding to the top in order to avoid the header from overlaying*/
   /*padding-top: 40px;*/
-  padding-bottom: 70px;
+  /*padding-bottom: 70px;*/
   font-family: 'Lato', sans-serif;
 }
 
@@ -136,6 +136,8 @@ body{
   background-color: #F8F3E6;
   padding-top: 14px;
   padding-bottom: 14px;
+  /*to separate from the footer*/
+  margin-bottom: 40px;
 }
 
 .insta-img{
@@ -168,6 +170,45 @@ body{
   width: 50%;
   word-break: break-word;
 }
+
+/*footer*/
+
+.container.footer{
+  background-color: #F8F3E6;
+  padding-top: 50px;
+  margin: 0;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.footer-badge{
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-text{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
