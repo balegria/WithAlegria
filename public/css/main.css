@@ -122,12 +122,6 @@ body{
   padding-top: 30pt;
 }
 
-.main-about-me-content p{
-  color: #0F161A;
-  font-family: 'Allura', cursive;
-  padding-top: 35pt;
-  line-height: 150%;
-}
 
 
 /*instagram feed formatting*/
@@ -136,8 +130,6 @@ body{
   background-color: #F8F3E6;
   padding-top: 14px;
   padding-bottom: 14px;
-  /*to separate from the footer*/
-  margin-bottom: 40px;
 }
 
 .insta-img{
@@ -177,6 +169,7 @@ body{
   background-color: #F8F3E6;
   padding-top: 50px;
   margin: 0;
+  margin-top: 50px;
   padding-bottom: 50px;
   width: 100%;
 }

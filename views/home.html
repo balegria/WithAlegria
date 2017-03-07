@@ -6,6 +6,9 @@
             <h1 id = "latest-posts-title">Latest Posts</h1>
             <div class="post-preview"
                 <article ng-repeat = "post in postCollections">
+
+                    <div ng-bind="post.date"></div>
+
                     <h2 class = "post-title">{{post.title}}</h2>
                     <div ng-bind-html="post.intro"></div>
 
