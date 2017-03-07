@@ -13,7 +13,7 @@ app.controller('PageCtrl', ['$scope', '$http', '$resource',
             accessToken: '4483004649.ba4c844.be8c9996027d45b1ab46b078fd6abb9d',
             limit: 3,
             resolution: 'low_resolution',
-            template: '<div class="insta-img"><a href="{{link}}"><img src="{{image}}" /></a></div>'
+            template: '<div class="insta-img"><a href="{{link}}"><img src="{{image}}"/></a></div>'
       });
       userFeed.run();
     }
