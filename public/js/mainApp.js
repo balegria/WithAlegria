@@ -1,3 +1,16 @@
+$(document).ready(function() {
+	$(window).scroll(function () {
+		console.log($(window).scrollTop())
+	    if ($(window).scrollTop() > 210) {
+	      $('#navbar').addClass('navbar-fixed-top');
+	      $('#navbar').css('background-color', 'red');
+	    }
+	    if ($(window).scrollTop() < 210) {
+	      $('#navbar').removeClass('navbar-fixed-top');
+	    }
+  	});
+});
+
 $(document).on('click','.navbar-collapse.in',function(event) {
     if( $(event.target).is('a')){
         $(this).collapse('hide');

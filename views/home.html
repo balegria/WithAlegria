@@ -7,14 +7,20 @@
             <div class="post-preview"
                 <article ng-repeat = "post in postCollections">
 
-                    <div ng-bind="post.date"></div>
+                    <!-- <div ng-bind="post.date"></div> -->
 
                     <h2 class = "post-title">{{post.title}}</h2>
-                    <div ng-bind-html="post.intro"></div>
+                    <!-- <div ng-bind-html="post.intro"></div> -->
 
 
-                    <img ng-src="public/img/{{post.images[0]}}" class = "post-image"></img>
+                    <!-- <img ng-src="public/img/{{post.images[0]}}" class = "post-image"></img> -->
                     <div ng-bind-html="post.postContent"></div>
+
+                    <div ng-repeat = "imageName in post.images">
+                        <img ng-src="public/img/{{imageName}}" class = "post-image">
+                    </div>
+
+                    <hr>
                     
                 </article>
             </div>
