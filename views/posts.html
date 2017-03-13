@@ -10,9 +10,14 @@
                     <h1 class = "post-title">{{post.title}}</h1>
                     <div ng-bind-html="post.intro"></div>
 
-                    <img ng-src="public/img/{{post.images[0]}}" class = "post-image"></img>
+                    <!-- <img ng-src="public/img/{{post.images[0]}}" class = "post-image"></img> -->
 
                     <div ng-bind-html="post.postContent"></div>
+
+                    <div ng-repeat = "imageName in post.images">
+                        <img ng-src="public/img/{{imageName}}" class = "post-image">
+                    </div>
+
                     <hr>
                   </div>
                 </article>
