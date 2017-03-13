@@ -59,7 +59,7 @@ app.get('/getLastThreePosts', (req, res) =>{
 
 app.get('/getPosts/:postType', (req, res) =>{
 	var postType = req.params.postType;
-	db.collection('postsCollection').find({category: postType}).toArray(function(err,result){
+	db.collection('postsCollection').find({category: postType}).sort({date:-1}).toArray(function(err,result){
 		if(err) return console.log(err);
 		else{
 			res.json(result);
