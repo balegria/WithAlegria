@@ -5,6 +5,8 @@
 app.controller('PageCtrl', ['$scope', '$http', '$resource', 
   function ($scope, $http, $resource) {
     console.log("Page Controller reporting for duty...");
+
+    mixpanel.track("Home Page Loading");
     
     if (topic == "With Alegria"){    
       var userFeed = new Instafeed({
